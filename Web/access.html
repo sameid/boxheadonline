@@ -1,0 +1,42 @@
+<html>
+
+
+    <head>
+        <title>Connect yourself! BO+FB!</title>
+
+  
+
+</head>
+    <body >
+
+	
+        <script type="text/javascript">
+
+        var appId = "183742228324698";
+	var accessToken = "0";
+            accessToken = window.location.hash.substring(1);
+	    
+
+
+
+            writeAppletTag();
+	
+
+            function writeAppletTag() {
+                document.writeln('<APPLET CODE="AccessTokenApplet" WIDTH="500" HEIGHT="100" ARCHIVE="fb.jar">');
+                document.writeln(buildParamTag('token',accessToken));               
+                document.writeln('</APPLET>');                
+            }
+
+            function buildParamTag(name, value) {
+                return '<PARAM NAME="' + name + '" VALUE="' + value + '">';
+            }
+
+		document.writeln(accessToken);
+
+
+        </script>
+
+
+    </body>
+</html>

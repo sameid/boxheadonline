@@ -1,0 +1,22 @@
+
+ <html>
+    <head>
+      <title>Sign up for Boxhead Online</title>
+    </head>
+    <body>
+      <div id="fb-root"></div>
+      <script src="http://connect.facebook.net/en_US/all.js">
+      </script>
+      <script>
+         FB.init({ 
+            appId:'183742228324698', cookie:true, 
+            status:true, xfbml:true 
+         });
+      </script>
+<fb:registration 
+  fields="name,birthday,gender,location,email" 
+  redirect-uri="http://developers.facebook.com/tools/echo/"
+  width="530">
+</fb:registration>
+    </body>
+ </html>
